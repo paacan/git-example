@@ -3,5 +3,6 @@ public class Example {
         System.out.println("Hello ");
         System.out.println("World");
         System.out.println("Vlad");
+        System.out.println("New branch");
     }
 }
