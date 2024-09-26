@@ -11,10 +11,10 @@ public class TestContact {
         numbers.add("123-456-7890");
         numbers.add("987-654-3210");
         Contact Vlad = new Contact("Влад", LocalDate.of(2004, 10, 6), numbers);
-        Contact Stas = new Contact("Стас", LocalDate.of(1994, 9, 17), numbers);
+        Contact Stas = new Contact("Стас", LocalDate.of(1994, 10, 6), numbers);
         Contact Masha = new Contact("Маша", LocalDate.of(2004, 10, 6), numbers);
         Contact Maxim = new Contact("Максим", LocalDate.of(2001, 12, 26), numbers);
-        Contact Angelina = new Contact("Ангелина", LocalDate.of(2001, 9, 26), numbers);
+        Contact Angelina = new Contact("Ангелина", LocalDate.of(2001, 11, 26), numbers);
         PhoneContact phoneBook = new PhoneContact();
 
         phoneBook.addContact(Vlad);

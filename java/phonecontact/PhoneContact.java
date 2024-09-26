@@ -94,9 +94,8 @@ public class PhoneContact  {
         List<Contact> listContact = new ArrayList<>();
         Map.Entry<LocalDate, Contact> entry = contactfirstdate.ceilingEntry(today);
         if (entry != null) {
-            listContact.add(entry.getValue());
             for (Map.Entry<Contact, LocalDate> day : contactfirstdateV2.entrySet()) {
-                if (day.getValue().equals(entry.getKey())) {
+                if (day.getValue().getMonthValue() == entry.getKey().getMonthValue() && day.getValue().getDayOfMonth() == entry.getKey().getDayOfMonth()) {
                     listContact.add(day.getKey());
                 }
             }
