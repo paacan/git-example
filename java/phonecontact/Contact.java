@@ -3,16 +3,17 @@ package phonecontact;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Objects;
 
 public class Contact {
 
     private String name;
         private LocalDate birthdaydate;
-        private ArrayList<String> phones;
+        private List<String> phones;
         private boolean favourite;
 
-        public Contact(String name, LocalDate birthdaydate, ArrayList<String> phones) {
+        public Contact(String name, LocalDate birthdaydate, List phones) {
             this.name = name;
             this.birthdaydate = birthdaydate;
             this.phones = phones;
@@ -31,7 +32,7 @@ public class Contact {
         return favourite;
     }
 
-    public ArrayList<String> getPhones() {
+    public List<String> getPhones() {
             return phones;
         }
 
